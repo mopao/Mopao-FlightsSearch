@@ -1,9 +1,15 @@
 # Mopao Flights search engine
 
+
+
 ## Description
 This project is a flights search engine that only provides  flights from the United States, Spain, United Kingdom, Germany and India.
 
+![Flights search form](https://github.com/mopao/Mopao-FlightsSearch/blob/main/imgs/readme/flights_search_form.png)
 
+![Itinerary map](https://github.com/mopao/Mopao-FlightsSearch/blob/main/imgs/readme/map_itinerary.png)
+
+![Flights list](https://github.com/mopao/Mopao-FlightsSearch/blob/main/imgs/readme/flights_list.png)
 
 ## Resources
 
