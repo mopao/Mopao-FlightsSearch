@@ -29,13 +29,22 @@ function deleteMarkers() {
 }
 function initMap() {
     "use strict";
-    let marker=null, myLatlng;
+    let marker, myLatlng;
     let zoomNber = 2.4;
     myLatlng = {lat: 0, lng: 0};
     worldMap = new google.maps.Map(document.getElementById("map"), {
         center: myLatlng,
         zoom: zoomNber,
         minZoom: 1.9,
+    });
+
+    // Configure the click listener.
+    worldMap.addListener("click", function (mapsMouseEvent) {
+        // center the map on the geocode
+        worldMap.setCenter(mapsMouseEvent.latLng);
+        // zoom the map
+        zoomNber += 0.2;
+        worldMap.setZoom(zoomNber);
     });
 
     var forms = document.getElementsByName('f-map-airports');
@@ -66,10 +75,16 @@ function initMap() {
                   var airportPosition = {lat: Number.parseFloat(result[0].latitude), lng: Number.parseFloat(result[0].longitude)};
                   //console.log( result);
                   flightPlanCoordinates.push(airportPosition);
-                  var marker = new google.maps.Marker({
+                  marker = new google.maps.Marker({
                       position: airportPosition,
                       label: code,
                       map: worldMap
+                  });
+                  //set click event on marker
+                  marker.addListener("click", () => {
+                    zoomNber += 0.2;
+                    worldMap.setZoom(zoomNber);
+                    worldMap.setCenter(marker.getPosition());
                   });
                   markers.push(marker);
               }
@@ -90,6 +105,8 @@ function initMap() {
         });
         flightPath.setMap(worldMap);
         worldMap.setCenter(flightPlanCoordinates[0]);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         //worldMap.setZoom(2.4);
 
       };

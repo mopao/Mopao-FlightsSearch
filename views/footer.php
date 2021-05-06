@@ -1,6 +1,6 @@
 <footer>
   <hr>
-  &copy; <?php $d = new DateTime('NOW'); echo $d->format("Y");?> by Mopao Inc.
+  &copy; <?php $d = new DateTime('NOW'); echo $d->format("Y");?> by Fake Mopao Inc.
 </footer>
 <script src="https://kit.fontawesome.com/c03ea9a48c.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
