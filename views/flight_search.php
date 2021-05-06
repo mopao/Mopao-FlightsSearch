@@ -62,7 +62,7 @@ if (isset($_POST['search'])) {
    <title>
      MOPAO - flights search
    </title>
-   <link rel="shortcut icon" type="image/x-icon" href="imgs/plane.png" />
+
    <!-- library -->
    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -71,6 +71,7 @@ if (isset($_POST['search'])) {
    <!-- my css -->
    <link rel="stylesheet" href="css/general.css" type="text/css"/>
    <link rel="stylesheet" href="css/flight_search.css" type="text/css"/>
+   <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico" />
  </head>
  <body class="fluid-container">
    <?php
