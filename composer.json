@@ -1,0 +1,13 @@
+{
+
+    "require": {
+        "rmccue/requests": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+
+          "Mopao\\ObjectManagers\\" : "objectManagers/"
+
+        }
+    }
+}

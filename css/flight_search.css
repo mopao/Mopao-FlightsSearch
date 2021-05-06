@@ -1,0 +1,25 @@
+form{
+  max-width: 60%;
+  margin: 2em auto;
+}
+
+label.form-check-label{
+  display: inline-block;
+  margin-right: 0.6em;
+}
+
+div#icon-aircraft-wrapper{
+  position: relative;
+}
+div#icon-aircraft-wrapper >i{
+  font-size: 3em;
+  display: block;
+  padding-top: 10px;
+  margin: 0;
+  position: absolute;
+  color: #8fd9a8;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

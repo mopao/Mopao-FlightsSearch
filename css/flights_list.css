@@ -1,0 +1,51 @@
+div.jumbotron{
+  padding: 0px;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 1em;
+  border-bottom: 2em solid ligthgray;
+}
+
+.content-wrapper{
+  padding: 2em;
+  line-height: 1.6;
+}
+.flight-details{
+  text-transform: capitalize;
+  border-bottom: 3px solid gray;
+  padding-bottom: 1em;
+}
+.label{
+  font-weight: bold;
+}
+
+h1,h2,h3{
+  text-transform: uppercase;
+}
+h3{
+  font-size: 1em;
+  color:  #8fd9a8;
+  font-weight: bold;
+}
+section.list-offers h2, section.list-offers h3{
+  padding-top: 1em;
+
+}
+div.offer{
+  border: 1px solid #8fd9a8;
+  padding: 0em 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+div.offer section.flight:nth-child(2){
+  border-top: 1px dashed gray;
+}
+
+.no-flights-msg{
+  color: #016884;
+}
+.viewMap{
+  background-color:  #016884;
+  color: white;
+
+}

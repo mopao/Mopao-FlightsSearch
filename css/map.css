@@ -1,0 +1,9 @@
+#map {
+  height: 400px;
+  width: 100%;
+  position: fixed !important;
+  top: 57px;
+  right: 0px;
+  background-color: gray;
+  overflow: scroll;
+}

@@ -1,0 +1,17 @@
+/* general styling */
+body{
+  font-family: sans-serif;
+}
+/******************* header ***********************************************/
+nav#main-menu{
+  background-image: linear-gradient(to bottom right, #8fd9a8 , #d2e69c);
+  padding: 1em 1em 0em 1em;
+}
+header{
+  height: 50px;
+}
+/******************* footer ***********************************************/
+
+footer{
+  text-align: center;
+}
