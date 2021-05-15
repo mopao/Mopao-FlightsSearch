@@ -41,7 +41,9 @@ div.offer{
 div.offer section.flight:nth-child(2){
   border-top: 1px dashed gray;
 }
-
+section.flight{
+  padding-bottom: 1em;
+}
 .no-flights-msg{
   color: #016884;
 }
